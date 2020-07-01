@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Krake.View.ContactPage"
+             Title="Kontakt">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Label x:Name="InfoLabel"
+                       Grid.Row="0" FontSize="Body" Padding="20"></Label>
+                <!-- Subject -->
+                <Entry x:Name="SubjectContactEntry"
+                       Placeholder="Betreff"
+                       PlaceholderColor="#4D4D4D"
+                       Grid.Row="1"
+                       VerticalOptions="Start"
+                       BackgroundColor="#00000000"
+                       Margin="5" />
+                <!-- Text -->
+                <Editor x:Name="TextContactEntry"
+                        Placeholder="Schreib uns"
+                        Grid.Row="2"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="StartAndExpand"
+                        BackgroundColor="#00000000"
+                        PlaceholderColor="#4D4D4D"
+                        AutoSize="TextChanges"
+                        Margin="5" />
+                <!-- SendButton -->
+                <Button x:Name="SendConatctButton"
+                        Text="Absenden"
+                        Clicked="SendConatctButton_Clicked"
+                        Grid.Row="3"
+                        TextColor="#000000" VerticalOptions="End" />
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

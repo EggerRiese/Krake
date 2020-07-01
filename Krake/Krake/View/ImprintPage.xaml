@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Krake.View.ImprintPage"
+             Title="Impressum">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label x:Name="InfoLabel"
+                       Grid.Row="0"
+                       FontSize="Default"
+                       Padding="20">Krake
+
+Janssen und Völkerink GbR
+Schutzenweg 42 1/323, 26129 Oldenburg
+info@krake-party.de
+Steuernummer: 64/231/20602 (UmsatzsteuerID)</Label>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
