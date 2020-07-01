@@ -45,29 +45,32 @@ namespace Krake.View
         {
             base.OnAppearing();
 
-            ParalaxScroll.Scrolled += OnParalaxScrolled;
+            //ParalaxScroll.Scrolled += OnParalaxScrolled;
 
         }
 
 
         protected override void OnDisappearing()
         {
-            ParalaxScroll.Scrolled -= OnParalaxScrolled;
+            //ParalaxScroll.Scrolled -= OnParalaxScrolled;
         }
 
         private void OnParalaxScrolled(object sender, ScrolledEventArgs e)
         {
             double fade = 1;
             double translation = 0;
+            double scale = 1;
 
             if (_lastScroll < e.ScrollY)
             {
                 translation = 0 - ((e.ScrollY / 2));
                 fade = 0.8;
+                scale = 1.2;
                 if (translation <= -100)
                 {
                     translation = -100;
                     fade = 0.8;
+                    scale = 1.2;
                 }
             }
             else
@@ -77,11 +80,13 @@ namespace Krake.View
                 {
                     translation = 0;
                     fade = 1;
+                    scale = 1;
                 }
             }
 
             ParalaxScroll.TranslateTo(ParalaxScroll.TranslationX, translation);
-            EventImage.FadeTo(fade, 500);
+            //EventImage.FadeTo(fade, 500);
+            EventImage.ScaleTo(scale,250, Easing.BounceIn);
 
             _lastScroll = e.ScrollY;
         }

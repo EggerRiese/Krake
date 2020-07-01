@@ -78,6 +78,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Renderers\TransparentNavbarRenderer.cs" />
     <Compile Include="Resources\MainViewController.cs" />
     <Compile Include="Resources\MainViewController.designer.cs">
       <DependentUpon>MainViewController.cs</DependentUpon>

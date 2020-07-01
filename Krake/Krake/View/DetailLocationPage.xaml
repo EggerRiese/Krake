@@ -13,12 +13,12 @@
                     VerticalOptions="FillAndExpand"
                     RowSpacing="0"
                     ColumnSpacing="6"
-                    Margin="0,0,0,-100">
+                    Margin="0,0,0,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="200" />
+                    <RowDefinition Height="Auto" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <Image x:Name="EventImage"
@@ -26,9 +26,7 @@
                        Grid.Row="0"
                        HeightRequest="200"
                        Aspect="AspectFill"
-                       AnchorX="0"
-                       AnchorY="0"
-                       BackgroundColor="#000000" />
+                       BackgroundColor="#000000" MinimumHeightRequest="50" Scale="1.3" />
                 <ScrollView x:Name="ParalaxScroll"
                             Grid.Row="1"
                             BackgroundColor="{StaticResource DarkBlue}">

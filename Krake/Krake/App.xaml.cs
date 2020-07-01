@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Krake.CustomRenderer;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,8 +11,9 @@ namespace Krake
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new TransparentNavigation(new MainPage());
             NavigationPage.SetHasNavigationBar(MainPage, false);
+            NavigationPage.SetBackButtonTitle(MainPage, "");
         }
 
         protected override void OnStart()

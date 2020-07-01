@@ -28,6 +28,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="CustomRenderer\TransparentNavigation.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="View\BarPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

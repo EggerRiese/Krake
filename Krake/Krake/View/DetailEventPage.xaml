@@ -5,8 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              mc:Ignorable="d"
-             x:Class="Krake.View.DetailEventPage"
-             Title="Krake">
+             x:Class="Krake.View.DetailEventPage">
     <ContentPage.Content>
         <StackLayout>
             <Grid   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"

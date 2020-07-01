@@ -26,10 +26,7 @@ namespace Krake.View
 
             MyListView.ItemsSource = ViewModel.CityList;
 
-            
-                Title = "Standort: " + Preferences.Get("City", "");
-            
-            
+            Title = "Standort: " + Preferences.Get("City", "");            
         }
 
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -48,6 +45,7 @@ namespace Krake.View
             ((ListView)sender).SelectedItem = null;
             if (firstTime)
             {
+                this.ViewModel.SetReload();
                 await Navigation.PopAsync();
             }
             else
