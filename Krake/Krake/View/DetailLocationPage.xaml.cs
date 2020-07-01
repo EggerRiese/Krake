@@ -46,8 +46,13 @@ namespace Krake.View
         {
             base.OnAppearing();
             
-            //ParalaxScroll.Scrolled += ScrollView_Scrolled;  
+            ParalaxScroll.Scrolled += OnParalaxScrolled;  
             
+        }
+
+        protected override void OnDisappearing()
+        {
+            ParalaxScroll.Scrolled -= OnParalaxScrolled;
         }
 
         private void EventsFromLocation_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
@@ -57,11 +62,6 @@ namespace Krake.View
                 ItemsListView.IsVisible = true;
             }
             ItemsListView.HeightRequest = 55 * viewModel.eventsFromLocationCount + 55 * viewModel.eventsFromLocation.Count;
-        }
-
-        protected override void OnDisappearing()
-        {
-            //ParalaxScroll.Scrolled -= ScrollView_Scrolled;
         }
 
         private void OnParalaxScrolled(object sender, ScrolledEventArgs e)
@@ -96,9 +96,9 @@ namespace Krake.View
 
             ParalaxScroll.TranslateTo(ParalaxScroll.TranslationX, translation);
             //EventImage.FadeTo(fade, 500);
-            EventImage.ScaleTo(scale, 500, Easing.BounceOut);
+            //EventImage.ScaleTo(scale, 500, Easing.BounceOut);
             
-            _lastScroll = e.ScrollY;
+            _lastScroll = _lastScroll - e.ScrollY;
         }
 
         private const int ScrollMinLimit = 0;

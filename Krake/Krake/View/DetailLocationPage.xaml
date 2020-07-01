@@ -13,7 +13,7 @@
                     VerticalOptions="FillAndExpand"
                     RowSpacing="0"
                     ColumnSpacing="6"
-                    Margin="0,0,0,0">
+                    Margin="0,0,0,-100">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
@@ -26,10 +26,10 @@
                        Grid.Row="0"
                        HeightRequest="200"
                        Aspect="AspectFill"
-                       BackgroundColor="#000000" MinimumHeightRequest="50" Scale="1.3" />
+                       BackgroundColor="#000000" MinimumHeightRequest="50" />
                 <ScrollView x:Name="ParalaxScroll"
                             Grid.Row="1"
-                            BackgroundColor="{StaticResource DarkBlue}">
+                            BackgroundColor="{StaticResource DarkBlue}" HorizontalOptions="FillAndExpand">
                     <Grid   x:Name="ParallaxGrid"
                             RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
                             RowSpacing="8"

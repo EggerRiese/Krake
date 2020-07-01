@@ -58,8 +58,9 @@ namespace Krake.View
         private void OnParalaxScrolled(object sender, ScrolledEventArgs e)
         {
             double fade = 1;
-            double translation = 0;
             double scale = 1;
+            double translation = 0;
+            double lastPosition = 0;
 
             if (_lastScroll < e.ScrollY)
             {
@@ -86,9 +87,9 @@ namespace Krake.View
 
             ParalaxScroll.TranslateTo(ParalaxScroll.TranslationX, translation);
             //EventImage.FadeTo(fade, 500);
-            EventImage.ScaleTo(scale,250, Easing.BounceIn);
+            //EventImage.ScaleTo(scale, 500, Easing.BounceOut);
 
-            _lastScroll = e.ScrollY;
+            _lastScroll = _lastScroll - e.ScrollY;
         }
     }
 }
