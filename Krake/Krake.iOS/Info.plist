@@ -27,8 +27,14 @@
 	<string>1.1</string>
 	<key>CFBundleName</key>
 	<string>Krake</string>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcons.appiconset</string>
+	<key>UILaunchStoryboardName</key>
+	<string>MainViewController</string>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
 	<key>UIMainStoryboardFile</key>
-	<string>LaunchScreen</string>
+	<string>Main</string>
 	<key>CFBundleShortVersionString</key>
 	<string>2</string>
 	<key>UILaunchStoryboardName</key>

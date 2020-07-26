@@ -79,16 +79,10 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Renderers\TransparentNavbarRenderer.cs" />
-    <Compile Include="Resources\MainViewController.cs" />
-    <Compile Include="Resources\MainViewController.designer.cs">
-      <DependentUpon>MainViewController.cs</DependentUpon>
-    </Compile>
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Resources\MainViewController.storyboard" />
-    <ITunesArtwork Include="iTunesArtwork%402x" />
-    <ITunesArtwork Include="iTunesArtwork" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon1201.png">
@@ -118,7 +112,6 @@
     <ImageAsset Include="Assets.xcassets\Color.colorset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -177,7 +170,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Krake\Krake.csproj">
-      <Project>{BDBB5AA0-0E54-4C9C-A7ED-835253FDF337}</Project>
+      <Project>{3DF842DC-BF89-4D53-8BFA-27242F7FA444}</Project>
       <Name>Krake</Name>
     </ProjectReference>
   </ItemGroup>
