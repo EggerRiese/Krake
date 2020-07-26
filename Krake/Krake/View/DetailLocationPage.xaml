@@ -55,7 +55,7 @@
                                TextColor="#FFFFFF"
                                VerticalOptions="StartAndExpand"
                                Padding="10,20,10,20"
-                               HorizontalTextAlignment="Center" BackgroundColor="#867474" />
+                               HorizontalTextAlignment="Center" />
                         <Label Text="{Binding Loc.Street}"
                                x:Name="EntryfeeLabel"
                                Grid.Row="1"
