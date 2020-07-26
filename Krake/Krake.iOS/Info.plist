@@ -18,7 +18,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>13.5</string>
+	<string>13.6</string>
 	<key>CFBundleDisplayName</key>
 	<string>Krake</string>
 	<key>CFBundleIdentifier</key>
@@ -28,13 +28,13 @@
 	<key>CFBundleName</key>
 	<string>Krake</string>
 	<key>XSAppIconAssets</key>
-	<string>Assets.xcassets/AppIcons.appiconset</string>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>UILaunchStoryboardName</key>
-	<string>MainViewController</string>
+	<string>LaunchScreen</string>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>
 	<key>UIMainStoryboardFile</key>
-	<string>LaunchScreen</string>
+	<string>Main</string>
 	<key>CFBundleShortVersionString</key>
 	<string>2</string>
 </dict>
