@@ -20,9 +20,10 @@ namespace Krake.Network
         {
             client = new HttpClient
             {
-                //client.BaseAddress = new Uri("http://localhost:50536/");        // DEBUG
+                //BaseAddress = new Uri("http://10.0.2.2:53426/")        // DEBUG
                 BaseAddress = new Uri("https://www.krake-party.de/") // RELEASE
             };
+            //TestConnectionAsync();
         }
         //http://s789101103.online.de/<<<yyyyyyy<y
         //http://www.krake-party.de/
