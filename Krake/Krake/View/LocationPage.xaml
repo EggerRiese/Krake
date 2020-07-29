@@ -6,11 +6,13 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              mc:Ignorable="d"
              x:Class="Krake.View.LocationPage"
+             BackgroundImageSource="{StaticResource Key=background}"
              Title="Location">
     <ListView x:Name="LocationListView"
               ItemsSource="{Binding Location}"
               ItemTapped="Handle_ItemTapped"
               CachingStrategy="RecycleElement"
+              BackgroundColor="#00FF6600"
               IsGroupingEnabled="True">
         <ListView.ItemTemplate>
             <DataTemplate>

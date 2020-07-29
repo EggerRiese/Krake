@@ -5,11 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Krake.View.MorePage"
+             BackgroundImageSource="{StaticResource Key=background}"
              Title="Mehr">
   <ListView x:Name="MyListView"
             ItemsSource="{Binding Items}"
             ItemTapped="Handle_ItemTapped"
-            CachingStrategy="RecycleElement">
+              BackgroundColor="#00FF6600"
+              CachingStrategy="RecycleElement">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding}"

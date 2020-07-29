@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Krake.View.ContactPage"
+             BackgroundImageSource="{StaticResource Key=background}"
              Title="Kontakt">
     <ContentPage.Content>
         <ScrollView>

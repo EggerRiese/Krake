@@ -13,7 +13,14 @@
             <OnPlatform x:TypeArguments="ImageSource" x:Key="logo">
                 <On Platform="Android"
                     Value="splash_logo.png" />
-                <On Platform="iOS" Value="Icon180.png" />
+                <On Platform="iOS" Value="Icon167.png" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="ImageSource"
+                        x:Key="background">
+                <On Platform="Android"
+                    Value="" />
+                <On Platform="iOS"
+                    Value="background.png" />
             </OnPlatform>
         </ResourceDictionary>
     </Application.Resources>

@@ -6,12 +6,15 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              mc:Ignorable="d"
              x:Class="Krake.View.PartyPage"
-             Title="Party">
+             Title="Party"
+             BackgroundImageSource="{StaticResource Key=background}"
+             BackgroundColor="#CF5454">
   <ListView x:Name="PartyListView"
             ItemsSource="{Binding Party}"
             ItemTapped="Handle_ItemTapped"
             CachingStrategy="RecycleElement"
-            IsGroupingEnabled="True">
+              BackgroundColor="#00FF6600"
+              IsGroupingEnabled="True">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ImageCell Text="{Binding Title}"

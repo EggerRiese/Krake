@@ -33,6 +33,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon167.png" width="128" height="128"/>
+        <image name="Default" width="128" height="128"/>
     </resources>
 </document>

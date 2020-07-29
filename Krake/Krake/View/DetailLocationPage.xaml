@@ -26,7 +26,7 @@
                        Grid.Row="0"
                        HeightRequest="200"
                        Aspect="AspectFill"
-                       BackgroundColor="#000000" MinimumHeightRequest="50" />
+                       BackgroundColor="#1d1d2d" MinimumHeightRequest="50" />
                 <ScrollView x:Name="ParalaxScroll"
                             Grid.Row="1"
                             BackgroundColor="{StaticResource DarkBlue}" HorizontalOptions="FillAndExpand">

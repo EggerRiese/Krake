@@ -6,12 +6,13 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              mc:Ignorable="d"
              x:Class="Krake.View.BarPage"
+             BackgroundImageSource="{StaticResource Key=background}"
              Title="Bar">
     <ListView x:Name="BarListView"
               ItemsSource="{Binding ViewModel.Bar}"
               ItemTapped="Handle_ItemTapped"
-              CachingStrategy="RecycleElement"
-              IsGroupingEnabled="True">
+              CachingStrategy="RecycleElement,RecycleElementAndDataTemplate"
+              IsGroupingEnabled="True" BackgroundColor="#00FF6600" SeparatorColor="#CC5100" InputTransparent="True">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ImageCell Text="{Binding Title}"
@@ -26,10 +27,10 @@
                 <ViewCell ios:Cell.DefaultBackgroundColor="Transparent"
                           Height="20">
                     <Label Text="{Binding DateG}"
-                           BackgroundColor="#1A000000"
+                           BackgroundColor="#4EBCAD"
                            VerticalTextAlignment="Center"
                            Margin="0,0,0,0"
-                           Padding="10,0,0,0" />
+                           Padding="10,0,0,0" InputTransparent="True" />
                 </ViewCell>
             </DataTemplate>
         </ListView.GroupHeaderTemplate>

@@ -27,7 +27,7 @@
                        Aspect="AspectFill"
                        AnchorX="0"
                        AnchorY="0"
-                       BackgroundColor="#000000" />
+                       BackgroundColor="#1d1d2d" />
                 <ScrollView x:Name="ParalaxScroll"
                             Grid.Row="1"
                             BackgroundColor="{StaticResource DarkBlue}">
@@ -51,7 +51,7 @@
                         </Grid.RowDefinitions>
                         <Label Text="{Binding Ev.Title}"
                                Grid.Row="0"
-                               Grid.ColumnSpan="4"
+                               Grid.ColumnSpan="5"
                                FontSize="Large"
                                TextColor="#FFFFFF"
                                VerticalOptions="StartAndExpand"
@@ -101,7 +101,7 @@
                                HorizontalOptions="StartAndExpand" />
                         <Label Text="{Binding Ev.Text}"
                                Grid.Row="3"
-                               Grid.ColumnSpan="4"
+                               Grid.ColumnSpan="5"
                                FontSize="Small"
                                TextColor="#D9D9D9"
                                VerticalOptions="StartAndExpand"
@@ -109,7 +109,7 @@
                         <Image x:Name="ImageLogo"
                                Source="{StaticResource Key=logo}"
                                Grid.Row="4"
-                               Grid.ColumnSpan="4"
+                               Grid.ColumnSpan="5"
                                Aspect="AspectFit"
                                WidthRequest="100"
                                HorizontalOptions="Center"

@@ -5,10 +5,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Krake.View.SelectionPage"
+             BackgroundImageSource="{StaticResource Key=background}"
              Title="Standort">
     <ContentPage.Content>
         <ListView x:Name="MyListView"
                   ItemsSource="{Binding CityList}"
+                  BackgroundColor="#00FF6600"
                   ItemTapped="Handle_ItemTapped"
                   CachingStrategy="RecycleElement">
             <ListView.ItemTemplate>
