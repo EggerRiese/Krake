@@ -18,23 +18,19 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>13.5</string>
+	<string>13.6</string>
 	<key>CFBundleDisplayName</key>
 	<string>Krake</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.JanssenVoelkerink.Krake</string>
 	<key>CFBundleVersion</key>
-	<string>1.1</string>
+	<string>1.1.1</string>
 	<key>CFBundleName</key>
 	<string>Krake</string>
 	<key>XSAppIconAssets</key>
-	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<string>Assets.xcassets/AppIcons.appiconset</string>
 	<key>UILaunchStoryboardName</key>
-	<string>EmptyStoryboard1</string>
-	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleLightContent</string>
-	<key>CFBundleShortVersionString</key>
-	<string>2</string>
+	<string>LaunchScreen</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -42,7 +38,15 @@
 			<string>Dokumenttyp 1</string>
 		</dict>
 	</array>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>LaunchScreen</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3</string>
 </dict>
 </plist>
