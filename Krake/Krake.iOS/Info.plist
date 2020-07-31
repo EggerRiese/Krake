@@ -36,6 +36,8 @@
 		<dict>
 			<key>CFBundleTypeName</key>
 			<string>Dokumenttyp 1</string>
+      <key>LSHandlerRank</key> 
+      <string>Alternate</string>
 		</dict>
 	</array>
 	<key>UIStatusBarHidden</key>
@@ -48,5 +50,7 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleShortVersionString</key>
 	<string>3</string>
+  <key>LSSupportsOpeningDocumentsInPlace</key>
+  <string>NO</string>
 </dict>
 </plist>

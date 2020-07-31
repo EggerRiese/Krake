@@ -249,7 +249,9 @@
     <BundleResource Include="Resources\background%404x.png" />
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Resources\krake167.png" />
+    <ImageAsset Include="Resources\krake167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\krake180.png" />
