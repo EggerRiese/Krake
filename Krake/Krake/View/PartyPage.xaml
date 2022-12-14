@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             mc:Ignorable="d"
+             x:Class="Krake.View.PartyPage"
+             Title="Party"
+             BackgroundImageSource="{StaticResource Key=background}"
+             BackgroundColor="#CF5454">
+  <ListView x:Name="PartyListView"
+            ItemsSource="{Binding Party}"
+            ItemTapped="Handle_ItemTapped"
+            CachingStrategy="RecycleElement"
+              BackgroundColor="#00FF6600"
+              IsGroupingEnabled="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ImageCell Text="{Binding Title}"
+                           Detail="{Binding Description}"
+                           ImageSource="{Binding Image}"
+                           TextColor="#000000"
+                           DetailColor="#252525"></ImageCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <ListView.GroupHeaderTemplate>
+            <DataTemplate>
+                <ViewCell ios:Cell.DefaultBackgroundColor="Transparent"
+                          Height="20">
+                    <Label Text="{Binding DateG}"
+                           BackgroundColor="#1A000000"
+                           VerticalTextAlignment="Center"
+                           Margin="0,0,0,0"
+                           Padding="10,0,0,0" />
+                </ViewCell>
+            </DataTemplate>
+        </ListView.GroupHeaderTemplate>
+    </ListView>
+</ContentPage>

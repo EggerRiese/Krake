@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Krake.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="DarkBlue">#1D1D2D</Color>
+            <Color x:Key="Orange">#FF6600</Color>
+            
+            <OnPlatform x:TypeArguments="ImageSource" x:Key="logo">
+                <On Platform="Android"
+                    Value="splash_logo.png" />
+                <On Platform="iOS" Value="Icon167.png" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="ImageSource"
+                        x:Key="background">
+                <On Platform="Android"
+                    Value="" />
+                <On Platform="iOS"
+                    Value="background.png" />
+            </OnPlatform>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
